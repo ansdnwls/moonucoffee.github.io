@@ -396,8 +396,9 @@
             };
             
             try {
-                const response = await fetch('https://script.google.com/macros/s/AKfycbzeYLjSQalJuNQCmqFFacQnnXGz8AtUZDKRkeM0o4r_B5CRIFIgh8PfdJSsVIm-uaem/exec'
+                const response = await fetch('https://script.google.com/macros/s/AKfycbzeYLjSQalJuNQCmqFFacQnnXGz8AtUZDKRkeM0o4r_B5CRIFIgh8PfdJSsVIm-uaem/exec', {
                     method: 'POST',
+                    mode: 'no-cors',
                     headers: {
                         'Content-Type': 'application/json'
                     },
